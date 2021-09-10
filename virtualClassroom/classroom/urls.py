@@ -11,5 +11,5 @@ urlpatterns = [
     path('<int:pk>',views.viewsAssign.as_view()),
     # path('getassign/<int:pk>',views.studentView.as_view()),
     path('submit/<int:pk>',views.assigmentSubmitted.as_view()),
-
+    path('submit/',views.assigmentSubmitted.as_view()),
 ]

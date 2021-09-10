@@ -208,6 +208,8 @@ class assigmentSubmitted(APIView):
                 return Response({"msg":"ERROR !"})
 
             return Response({"msg":"SUBMITTED YEAHH!!!"})
+        return Response({"msg":"you are not student"},status=status.HTTP_401_UNAUTHORIZED)
+
       
     def get(self,request):
         user = request.user
